@@ -25,3 +25,13 @@ Constraints:
 args is a valid JSON array
 0 <= args.length <= 100
 */
+
+/**
+ * @param {...(null|boolean|number|string|Array|Object)} args
+ * @return {number}
+ */
+var argumentsLength = function(...args) {
+	return args.length;
+};
+
+ console.log(argumentsLength(1, 2, 3))
